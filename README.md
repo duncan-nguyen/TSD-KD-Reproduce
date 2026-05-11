@@ -21,12 +21,11 @@ You can copy and paste this entire block into your terminal or a .sh file. It in
 beta=0.9
 lambda=1.0
 threshold=0.1
-model_name="Qwen/Qwen2.5-1.5B-Instruct"
 indirect_kd_alpha=0.1
 
 # Execute Training
 accelerate launch --config_file accelerate_ddp_config.yaml train.py \
-    $beta $lambda $threshold $model_name $indirect_kd_alpha
+    $beta $lambda $threshold $indirect_kd_alpha
 ```
 
 
