@@ -11,11 +11,12 @@ Run this command to set up your environment:
 
 ```
 pip install -r requirements.txt
+```
 
 2. Training Script
 You can copy and paste this entire block into your terminal or a .sh file. It includes the variables and the launch command.
 
-```
+```bash
 # Hyperparameters
 BETA=0.9
 LAMBDA=1.0
