@@ -10,9 +10,7 @@ Note: You only use the prompts during on-policy KD.
 Run this command to set up your environment:
 
 ```
-pip install torch==2.5.1
-pip install transformers==4.57.3
-pip install trl==0.21.0
+pip install -r requirements.txt
 ```
 
 2. Training Script
