@@ -18,19 +18,15 @@ You can copy and paste this entire block into your terminal or a .sh file. It in
 
 ```bash
 # Hyperparameters
-BETA=0.9
-LAMBDA=1.0
-THRESHOLD=0.1
-MODEL_NAME="Qwen/Qwen2.5-1.5B-Instruct"
-INDIRECT_KD_ALPHA=0.1
+beta=0.9
+lambda=1.0
+threshold=0.1
+model_name="Qwen/Qwen2.5-1.5B-Instruct"
+indirect_kd_alpha=0.1
 
 # Execute Training
 accelerate launch --config_file accelerate_ddp_config.yaml train.py \
-    --beta $BETA \
-    --lambda $LAMBDA \
-    --threshold $THRESHOLD \
-    --model_name $MODEL_NAME \
-    --indirect_kd_alpha $INDIRECT_KD_ALPHA
+    $beta $lambda $threshold $model_name $indirect_kd_alpha
 ```
 
 
